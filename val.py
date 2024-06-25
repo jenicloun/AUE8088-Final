@@ -146,7 +146,8 @@ def run(
     dnn=False,  # use OpenCV DNN for ONNX inference
     model=None,
     dataloader=None,
-    save_dir=Path(""),
+    # save_dir=Path(""),
+    save_dir = os.path.abspath(os.path.dirname(__file__)),
     plots=True,
     callbacks=Callbacks(),
     compute_loss=None,
